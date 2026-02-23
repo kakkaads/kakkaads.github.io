@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakkaads</title>
+
+    <style>
+        /* CSS (Modern & Simple) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #111F35;
+            color: #ffffff;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #111F35;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #F63049;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #F63049;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #ccc;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background: #F63049;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #D02752;
+            transform: scale(1.05);
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .features h2 {
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #F63049;
+        }
+
+        .feature-box {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1c2b4a;
+            padding: 25px;
+            border-radius: 10px;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #8A244B;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0d1629;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                padding: 20px;
+            }
+
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Kakkaads</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Grow Your Business with Kakkaads</h1>
+            <p>Simple, modern and powerful landing page for your brand or agency.</p>
+            <button class="btn" onclick="showMessage()">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Our Services</h2>
+        <div class="feature-box">
+            <div class="card">
+                <h3>Digital Marketing</h3>
+                <p>Boost your online presence with smart marketing strategies.</p>
+            </div>
+            <div class="card">
+                <h3>Ad Campaigns</h3>
+                <p>Create high-converting ads for your business growth.</p>
+            </div>
+            <div class="card">
+                <h3>Branding</h3>
+                <p>Build a strong and professional brand identity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2026 Kakkaads. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showMessage() {
+            alert("Welcome! Let's grow your business With Kakkaads 🚀");
+        }
+    </script>
+
+</body>
+</html>
